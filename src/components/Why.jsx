@@ -11,9 +11,9 @@ const Why = () => {
             <div className="flex items-center justify-between mt-10">
                 <div className="w-1/2 relative">
                     <div className='flex items-center'>
-                        <img src={Hero2} className="w-[400px] h-[500px] object-cover object-center rounded-xl shadow-md" />
+                        <img src={Hero2} className="w-[400px] h-[500px] object-cover object-center rounded-xl shadow-sm" />
                     </div>
-                    <div className="stats shadow-md rounded-xl absolute top-16 right-16">
+                    <div className="stats shadow-sm rounded-xl absolute top-16 right-16">
                         <div className="stat flex flex-col items-center justify-center gap-1">
                             <div className="stat-title text-black font-[700]">Success Rate</div>
                             <div className="stat-value text-success">97%</div>
@@ -22,7 +22,7 @@ const Why = () => {
                     </div>
                 </div>
                 <div className='w-1/2'>
-                    <div className='flex flex-col justify-center gap-5 bg-slate-100 p-10 rounded-xl shadow-md'>
+                    <div className='flex flex-col justify-center gap-5'>
                         <p className='text-[30px] font-[600]'>Why enroll with Course Hero?</p>
                         <ul className='flex flex-col justify-center gap-3 list-disc text-[16px] font-[400] pl-5'>
                             <li>Access a vast collection of course materials.</li>
@@ -32,7 +32,7 @@ const Why = () => {
                             <li>Join a thriving community of learners and educators.</li>
                             <li>Benefit from real-life success stories.</li>
                         </ul>
-                        <Link>
+                        <Link to={'/about'}>
                             <button className="btn btn-success text-white rounded-[5px] px-[30px] py-[12px]">Explore More</button>
                         </Link>
                     </div>

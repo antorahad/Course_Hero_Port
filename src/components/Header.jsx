@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Header = () => {
@@ -14,34 +14,47 @@ const Header = () => {
                     <div className="mr-7">
                         <ul className="flex items-center justify-center text-[16px] font-[500]">
                             <li className="px-4">
-                                <Link to={'/'} className=
+                                <NavLink to={'/'} className=
                                     {({ isActive, isPending }) =>
                                         isPending ? "pending" : isActive ? "text-success" : ""
                                     }>
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="px-4">
-                                <Link>About</Link>
+                                <NavLink to={'/about'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-success" : ""
+                                    }>About
+                                </NavLink>
                             </li>
                             <li className="px-4">
-                                <Link>Course</Link>
+                                <NavLink>Course</NavLink>
                             </li>
                             <li className="px-4">
-                                <Link>Blog</Link>
+                                <NavLink to={'/blog'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-success" : ""
+                                    }>Blog
+                                </NavLink>
                             </li>
                             <li className="px-4">
-                                <Link>Contact</Link>
+                                <NavLink to={'/contact'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-success" : ""
+                                    }>
+                                    Contact
+                                </NavLink>
                             </li>
                             <li className="px-4">
-                                <Link>
+                                <NavLink>
                                     <AiOutlineShoppingCart size={25}></AiOutlineShoppingCart>
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <Link>
+                        <Link to={'/signin'}>
                             <button className="btn btn-success text-white text-[14px] font-[600] rounded-[5px] px-[30px] py-[12px]">Sign In</button>
                         </Link>
                     </div>

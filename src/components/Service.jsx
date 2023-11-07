@@ -10,7 +10,7 @@ const Service = () => {
                 <p className="text-[20px] font-[400]">Unlock premium study resources and expert tutoring with Course Hero today.</p>
             </div>
             <div className="grid grid-cols-3 gap-5 mt-10">
-                <div className="card shadow-md bg-gray-300 bg-opacity-30 rounded-[10px]">
+                <div className="card shadow-sm bg-gray-100 bg-opacity-30 rounded-[10px]">
                     <div className="card-body">
                         <div className="flex flex-col justify-center gap-4">
                             <div className='flex items-center justify-center w-[80px] h-[80px] bg-success bg-opacity-20 rounded-full text-success'>
@@ -21,7 +21,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card shadow-md bg-gray-300 bg-opacity-30 rounded-[10px]">
+                <div className="card shadow-sm bg-gray-100 bg-opacity-30 rounded-[10px]">
                     <div className="card-body">
                         <div className="flex flex-col justify-center gap-4">
                             <div className='flex items-center justify-center w-[80px] h-[80px] bg-success bg-opacity-20 rounded-full text-success'>
@@ -32,7 +32,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card shadow-md bg-gray-300 bg-opacity-30 rounded-[10px]">
+                <div className="card shadow-sm bg-gray-100 bg-opacity-30 rounded-[10px]">
                     <div className="card-body">
                         <div className="flex flex-col justify-center gap-4">
                             <div className='flex items-center justify-center w-[80px] h-[80px] bg-success bg-opacity-20 rounded-full text-success'>
