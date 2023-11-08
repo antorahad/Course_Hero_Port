@@ -22,7 +22,7 @@ const BlogCard = ({ blog }) => {
                         <img src={User} className="w-[30px] h-[30px] object-cover object-center rounded-full" />
                         <p className="text-[14px] font-[400]">{author}</p>
                     </div>
-                    <p className="text-[14px] font-[400]">Date: {publish_date}</p>
+                    <p className="text-[14px] font-[400]">Published: {publish_date}</p>
                 </div>
                 <div>
                     <p className="line-clamp-2 text-[16px] font-[400]">{short_description}</p>

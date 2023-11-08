@@ -8,7 +8,7 @@ const HomeContact = () => {
                     <h1 className='text-[40px] font-[600]'>Get More Info About us</h1>
                     <p className='w-[500px] text-[16px] font-[400]'>Connect with us for inquiries and assistance regarding our services. Our dedicated team is here to help you, providing prompt solutions and addressing your needs. Reach out today to experience top-notch support and expertise.</p>
                     <div className='flex items-center gap-5'>
-                        <Link>
+                        <Link to={'/course'}>
                             <button className='btn btn-warning text-white text-[14px] font-[600] rounded-[5px] px-[30px] py-[12px]'>Enroll Now</button>
                         </Link>
                         <Link to={'/contact'}>
