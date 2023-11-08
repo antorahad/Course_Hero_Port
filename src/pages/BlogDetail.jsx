@@ -9,11 +9,13 @@ const BlogDetail = () => {
     const { id } = useParams();
     const idInt = parseInt(id);
     const singleDetail = details.find(detail => detail.id === idInt);
-    const { image,
+    const { 
+        image,
         title,
         publish_date,
         author,
-        long_description } = singleDetail;
+        long_description 
+    } = singleDetail;
     return (
         <div>
             <div className="w-full min-h-[500px] mb-20 banner relative">
@@ -24,7 +26,7 @@ const BlogDetail = () => {
                     </Link>
                 </div>
 
-                <img src={image} className="w-[1024px] h-[400px] mx-auto absolute top-[270px] left-[155px]" />
+                <img src={image} className="w-[1024px] h-[400px] object-cover object-center mx-auto absolute top-[270px] left-[155px]" />
             </div>
             <div className="max-w-5xl mx-auto space-y-6 py-[120px]">
                 <h1 className="text-[30px] md:text-[54px] font-[600]">{title}</h1>

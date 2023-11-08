@@ -51,7 +51,10 @@ const Header = () => {
                                 </NavLink>
                             </li>
                             <li className="px-4">
-                                <NavLink>
+                                <NavLink to={'/cart'} className=
+                                    {({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-success" : ""
+                                    }>
                                     <AiOutlineShoppingCart size={25}></AiOutlineShoppingCart>
                                 </NavLink>
                             </li>

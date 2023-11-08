@@ -14,6 +14,8 @@ import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Contact from './pages/Contact';
 import Course from './pages/Course';
+import CourseDetail from './pages/CourseDetail';
+import Cart from './pages/Cart';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +35,11 @@ const router = createBrowserRouter([
         loader: () => fetch('courses.json')
       },
       {
+        path: "/course/:id",
+        element: <CourseDetail/>,
+        loader: () => fetch('courses.json')
+      },
+      {
         path: "/blog",
         element: <Blog/>,
         loader: () => fetch('/blogs.json')
@@ -45,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact/>
+      },
+      {
+        path: "/cart",
+        element: <Cart/>
       },
       {
         path: "/signin",

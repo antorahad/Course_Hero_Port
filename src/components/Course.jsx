@@ -4,6 +4,7 @@ import { MdAttachMoney } from 'react-icons/md';
 
 const Course = ({ course }) => {
     const {
+        id,
         image,
         title,
         price,
@@ -30,7 +31,7 @@ const Course = ({ course }) => {
                 <div>
                     <p className="line-clamp-2 text-[16px] font-[400]">{description}</p>
                 </div>
-                <Link>
+                <Link to={`/course/${id}`}>
                     <button className="btn btn-success text-white rounded-[5px] px-[30px] py-[12px]">View Details</button>
                 </Link>
             </div>
