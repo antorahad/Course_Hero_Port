@@ -13,6 +13,7 @@ import Signup from './pages/Signup';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Contact from './pages/Contact';
+import Course from './pages/Course';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About/>
+      },
+      {
+        path: "/course",
+        element: <Course/>,
+        loader: () => fetch('courses.json')
       },
       {
         path: "/blog",

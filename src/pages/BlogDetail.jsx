@@ -16,7 +16,7 @@ const BlogDetail = () => {
         long_description } = singleDetail;
     return (
         <div>
-            <div className="w-full min-h-[400px] mb-20 banner relative">
+            <div className="w-full min-h-[500px] mb-20 banner relative">
                 <div className="p-10">
                     <Link to={'/blog'} className="flex items-center gap-2 text-white">
                         <MdKeyboardArrowLeft size={20}></MdKeyboardArrowLeft>
@@ -24,9 +24,9 @@ const BlogDetail = () => {
                     </Link>
                 </div>
 
-                <img src={image} className="w-[1024px] h-[400px] mx-auto absolute top-[160px] left-[155px]" />
+                <img src={image} className="w-[1024px] h-[400px] mx-auto absolute top-[270px] left-[155px]" />
             </div>
-            <div className="max-w-5xl mx-auto space-y-6 py-[100px]">
+            <div className="max-w-5xl mx-auto space-y-6 py-[120px]">
                 <h1 className="text-[30px] md:text-[54px] font-[600]">{title}</h1>
                 <div className="flex items-center justify-between gap-5">
                     <div className="flex items-center justify-center gap-3">

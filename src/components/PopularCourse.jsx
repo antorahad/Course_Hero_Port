@@ -22,7 +22,7 @@ const PopularCourse = () => {
                     }
                 </div>
                 <div className="mt-7 flex items-center justify-center">
-                    <Link>
+                    <Link to={'/course'}>
                         <button className='btn btn-success text-white text-[14px] font-[600] rounded-[5px] px-[30px] py-[12px]'>Explore More</button>
                     </Link>
                 </div>
